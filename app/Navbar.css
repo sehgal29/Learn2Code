@@ -1,0 +1,161 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 6em 2em 6em;
+}
+.logo{
+    font-size: larger;
+    font-weight: 600;
+}
+.nav-items ul{
+    display: flex;
+    gap: 35px;
+}
+.started{
+    display: flex;
+    gap: 25px;
+}
+  .getStarted {
+    padding: 0.5rem 1rem;
+    background-color: rgb(15 118 110);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .getStarted:hover {
+    background-color: rgb(17, 82, 77);
+    animation: background-color 0.3s;
+  }
+  
+  .theme-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-items ul li {
+    position: relative;
+  }
+  
+  .new-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgb(234, 88, 12); /* Bright color to make it stand out */
+    /* margin-left: 0.5em;
+    padding: 2px 6px;
+    background-color: rgb(253, 230, 138);
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+   */
+
+   * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 6em;
+  }
+  
+  .logo {
+    font-size: larger;
+    font-weight: 600;
+  }
+  
+  .nav-items ul {
+    display: flex;
+    gap: 35px;
+  }
+  
+  .nav-items ul li {
+    position: relative;
+  }
+  
+  .nav-items ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-items ul li.active a {
+    font-weight: bold;
+  }
+  
+  .started {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .getStarted {
+    padding: 0.5rem 1rem;
+    background-color: rgb(15, 118, 110);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .getStarted:hover {
+    background-color: rgb(17, 82, 77);
+    animation: background-color 0.3s;
+  }
+  
+  .theme-toggle {
+    padding: 0.5rem 1rem;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .new-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgb(234, 88, 12);
+    margin-left: 0.5em;
+    padding: 2px 6px;
+    background-color: rgb(253, 230, 138);
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  

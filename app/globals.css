@@ -1,0 +1,415 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme styles (default) */
+:root {
+  --forgot: #000000;
+    --logo-color: rgb(17, 24, 39);
+    --background-color: #fff;
+    --yellow-color:rgb(169 121 43);
+    --github-color: #000000;
+    --para:rgb(156 163 175);
+    --sign-in-form: #fff;
+    --sign-up-page-bg:rgb(211, 211, 211);
+    --explore-button: rgb(197, 201, 205);
+    --over-button: rgb(243 244 246);
+    --overview-grid:#fff;
+    --overview-main-grid: rgb(243 244 246);
+    --skill-item:#f3f4f6;
+    --skill-list: #ffffff;
+    --skill-course-list: rgba(237, 237, 237, 0.986);
+    --dsa-list: rgb(228, 228, 228);
+    --contact-button-list: rgb(223, 223, 223);
+    --footer-text: #000;
+    --contact-text: #000;
+    --input-contact-section: #000;
+    --contact-list: rgb(243 244 246);
+    --headline:#000;
+    --donate-text: #0b0b0b;
+    --li-hover: #211f1f;
+    --role-text: #736f6f;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+/* Dark theme styles */
+.dark-theme {
+  --forgot: #dbd1d1;
+    --how-it-work: rgb(31 41 55);
+    --logo-color: rgb(101, 112, 124);
+    --background-color:  rgb(17, 24, 39);
+    --github-color : #fff;
+    --text-color: rgb(209 213 219); 
+    --sign-in-form: #1f2937;
+    --sign-up-page-bg:#111827;
+    --explore-button:rgb(55 65 81);
+    --over-button:rgb(55 65 81 / 10%);
+    --overview-grid: rgb(31 41 55);
+    --overview-main-grid: rgb(31 41 55);
+    --skill-item:rgb(17, 24, 39);
+    --skill-list: #1f2937;
+    --skill-course-list: #1f2937;
+    --dsa-list: #1f2937;
+    --contact-button-list: rgb(26, 35, 54);
+    --footer-text: #d0d4dd;
+    --contact-list: rgb(21 29 43);
+    --headline: #fff;
+    --contact-text: #d0d4dd;
+    --input-contact-section: #fff;
+    --li-hover: #fff;
+    --donate-text: #ccc;
+    --role-text: #e1e1e1;
+  }
+  
+  .dark-theme body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .dark-theme .navbar {
+    color: var(--navbar-bg-color);
+  }
+  
+  .dark-theme .nav-items a {
+    color: var(--text-color);
+  }
+  .main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6em;
+  }
+  .main-section h1{
+    font-size:3.5em;
+    font-weight: 500;
+    margin-bottom: 0.25em;
+  }
+  .main-section span{
+    color: var(--yellow-color);
+  }
+  .main-section p{
+    font-size: larger;
+    color: var(--para);
+    margin-bottom: 1.5em;
+  }
+  .explore{
+    padding: 1em;
+    border:0.5px solid rgb(75 85 99);
+    border-radius: 5px;
+  }
+  .explore:hover{
+    background-color: var(--explore-button);
+  }
+  .image-container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+    width: 100%;
+    position: relative; /* Required for Next.js Image component when using layout='fill' */
+  }
+  .image-container .donate-class{
+    background-color: var(--overview-main-grid);
+    display: flex;
+    align-items: center;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    flex-direction: column;
+
+  }
+  .image-container p{
+    padding: 1.6em 2em;
+    /* margin-bottom: 2em; */
+    border-radius: 5px;
+    /* margin-right: 26em; */
+    line-height: 1.5em;
+  }
+  .donate {
+    padding: 0.5rem 1rem;
+    background-color: rgb(15, 118, 110);
+    color: #fff;
+    border: none;
+    margin: 0 0 1.5em 1em;
+    /* margin-right: 85px; */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donate:hover {
+    background-color: rgb(17, 82, 77);
+    animation: background-color 0.3s;
+  }
+  /* .custom-image {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+  /* }  */  
+  .custom-image{
+    height: 50px;
+    width: 30%;
+  }
+  .how-it-work{
+    background-color: var(--how-it-work);
+    /* margin-top: 4em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .how-it-work h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .how-it-work p{
+    color: var(--para);
+    font-size: larger;
+    margin-bottom: 1.5em;
+  }
+  .how-icons{
+    display: flex;
+    gap: 3.5em;
+  }
+  .learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .learn h4{
+    font-size: large;
+    font-weight: 500;
+    margin: 2em 0 1em 0;
+  }
+  .how-icons .learn p{
+    font-size: 1em;
+  }
+  .signUp-Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 2em; */
+    align-items: center;
+    background-color: var(--si);
+  }
+  .signUp-Page a{
+    text-decoration:underline;
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(59, 70, 86);
+  }
+  .signUp-Page h1{
+    font-size: 2em;
+    margin-top: 2em;
+    font-weight: 600;
+  }
+  .form{
+    margin-top: 2em;display: flex;
+    margin-bottom: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    background-color:var(--sign-in-form);
+    border-radius: 5px;
+  }
+  .form p{
+    font-size: 0.8em;
+    color: var(--para);
+    margin: 0 1.5em 1.5em 1.5em;
+  }
+  .form label{
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .form input{
+    border: 1px solid rgb(92, 114, 124);
+    margin: 0.5em 0 1.2em 0;
+    border-radius: 5px;
+    padding: 0.4em;
+    width:22em;
+    background: transparent;
+  }
+  .form button{
+    background-color: rgb(15 118 110);
+    width: 100%;
+    padding: 0.5em 0;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .form button:hover{
+    background-color: rgb(14, 75, 70);
+    transition: background-color 0.2s;
+  }
+  .social-login{
+    display: flex;
+    gap: 2em;
+  }
+  .social-login button{
+    background: transparent;
+    border: 1px solid rgb(92, 114, 124);
+    padding: 0.7em 4.5em;
+  color:rgb(92, 114, 124) ;
+  }
+  .social-login button:hover{
+    background-color:var(--explore-button) ;
+    transition: background-color 0.2s;
+  }
+  .form .continue{
+    font-size: medium;
+    font-weight: 500  ;
+    margin: 1.5em 0;
+  }
+
+  .remember-forgot a{
+    margin-left: 12em;  
+    text-decoration: none;
+    color: var(--forgot);
+    font-size: medium;
+  }
+  .form-forgot input{
+    width: 32em;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--skill-item);
+    align-items: center;
+  }
+  .skills h2{
+    margin: 1em;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1.8em;
+  }
+    .skills-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 20px; /* space between grid items */
+    }
+  .skill-list{
+    margin: 1.8em 2em;
+    background-color: var(--skill-list);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .skill-list:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .skill-list h3{
+    margin-top: 1em;
+    font-size: large;
+    font-weight: 500;
+  }
+.skill-btn{
+  margin: 2em;
+}
+.footer-section{
+  display: flex;
+  gap: 4em;
+  margin: 4em 0 0 4em;
+  /* flex-direction: column; */
+ color: var(--footer-text);
+}
+.footer-section p{
+  margin: 1.5em 0;
+ /* color: var(--footer-text); */
+}
+
+.footer-icons {
+  display: flex;
+  cursor: pointer;
+  gap: 20px; /* Space between the icons */
+}
+
+.footer-social-icons {
+  font-size: 1.7rem; /* Adjust icon size */
+  color: #6b7280;
+  transition: transform 0.4s ease, color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+  margin-bottom: 4em;
+}
+
+.footer-social-icons:hover {
+  transform: translateY(-10px); /* Translate icon upwards */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /*Add shadow effect */
+  color: #000; /* Change color on hover (optional) */
+}
+/* Define hover effects for each social media icon with respective brand color */
+.footer-social-icons.github-icon:hover svg {
+  color: var(--github-color);
+}
+
+.footer-social-icons.mail-icon:hover svg {
+  color: #EA4335; /* Example color for mail icon */
+}
+
+.footer-social-icons.discord-icon:hover svg {
+  color: #7289DA;
+}
+
+.footer-social-icons.facebook-icon:hover svg {
+  color: #1877F2;
+}
+
+.footer-social-icons.twitter-icon:hover svg {
+  color: #1DA1F2;
+}
+
+.footer-social-icons.instagram-icon:hover svg {
+  color: #E1306C;
+}
+.pro-2{
+  display: flex;
+  gap: 4em;
+}
+.footer-list .headline{
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  color: var(--headline);
+}
+.footer-list{
+  margin-right: 4em;
+}
+.footer-list li{
+  margin-bottom: 20px;
+  color: rgb(132, 136, 141);
+}
+.footer-list li:hover{
+  color: var(--li-hover);
+}
+.footer-line{
+  height: 1px;
+  background-color: rgb(59, 70, 86);
+  margin: 0 5em;
+}
+.reserved{
+  margin: 2em 6.1em;
+  font-size: small;
+}
+.footer-flex-image{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}

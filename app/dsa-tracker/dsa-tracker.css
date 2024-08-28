@@ -1,0 +1,189 @@
+/* .tracker-container {
+    padding: 2em;
+    background-color: var(--background-color);
+  }
+  
+  .tracker-container h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  
+  .loader-container {
+    position: relative;
+    height: 30px;
+    margin-bottom: 2em;
+    background-color: var(--loader-background);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .loader-bar {
+    height: 100%;
+    background-color: var(--loader-progress);
+    transition: width 0.3s ease;
+  }
+  
+  .loader-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1em;
+    color: var(--loader-text-color);
+  }
+  
+  .topic-section {
+    margin-bottom: 2em;
+  }
+  
+  .topic-title {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: var(--dsa-list);
+    padding: 15px 12px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .topic-title:hover {
+    color: var(--highlight-color); /* Change this to a color of your choice */
+  /* }
+  
+  .question-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--skill-item);
+    transition: background-color 0.3s ease;
+  }
+  
+  .question-text {
+    font-size: 1.2em;
+  }
+  
+  .completion-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .completed-icon {
+    color: green;
+  }
+  
+  .incomplete-icon {
+    color: gray;
+  }
+  
+  .completion-button:hover {
+    transform: scale(1.1);
+  }
+   */ 
+   .tracker-container {
+    padding: 2em;
+    background-color: var(--background-color);
+  }
+  
+  .tracker-container h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  
+  .loader-container {
+    position: relative;
+    height: 35px;
+    margin-bottom: 2em;
+    background-color: var(--dsa-list);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .loader-bar {
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+  }
+  
+  .loader-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1em;
+    top: 5%;
+    z-index: 10;
+  }
+  
+  .topic-section {
+    margin-bottom: 2em;
+}
+
+.topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--dsa-list);
+  }
+  
+  .topic-header h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .topic-header:hover {
+    color: var(--highlight-color); /* Change this to a color of your choice */
+  }
+  
+  .question-count {
+    font-size: 1em;
+    color: var(--text-color); /* Change this to a color of your choice */
+  }
+  
+  .question-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background-color: var(--dsa-list);
+    transition: background-color 0.3s ease;
+  }
+  
+  .question-text {
+    font-size: 1.2em;
+  }
+  
+  .completion-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .completed-icon {
+    color: green;
+  }
+  
+  .incomplete-icon {
+    color: gray;
+  }
+  
+  .completion-button:hover {
+    transform: scale(1.1);
+  }
+  

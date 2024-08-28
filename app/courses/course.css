@@ -1,0 +1,91 @@
+/* .project-section{
+    margin: 1.8em 2em;
+    background-color: var(--skill-list);
+    border-radius: 5px;
+    display: flex;
+    /* flex-direction: column; */
+    /* padding: 0.75em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+/* .project-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-btn{
+    margin: 10px 0;
+    padding: 0.5em;
+    border:0.5px solid rgb(75 85 99);
+    border-radius: 5px;
+  }
+  .project-btn:hover{
+    background-color: var(--explore-button);
+  } */ 
+  .project-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 40px; */
+    margin: 3em 10em;
+    background-color: var(--skill-course-list);
+    border-radius: 5px;
+    /* display: flex; */
+    flex-direction: column; 
+    padding: 2em 1.5em;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+ .project-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .project-section h3{
+    margin-top: 1em;
+    font-size: 2.1em;
+    font-weight: 500;
+  }
+  .project-section p{
+    font-size: large;
+  }
+  .icon {
+    flex: 0 0 220px;
+    margin-right: 20px;
+  }
+  
+  .description {
+    flex: 1;
+  }
+  
+  .description h3 {
+    margin-top: 0;
+  }
+  
+  .project-btn {
+    display: block;
+    margin-top: 20px;
+    /* margin-left: 50%; */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border:0.5px solid rgb(75 85 99);
+    border-radius: 5px;
+  }
+
+  .project-btn:hover{
+    background-color: var(--explore-button);
+  }
+  
+  .course-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .course-btn a{
+    margin-right: 15px;
+  }

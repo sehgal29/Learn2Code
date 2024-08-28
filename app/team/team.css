@@ -1,0 +1,100 @@
+/* Existing styles for team members */
+.teamContainer {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .teamGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .memberCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .memberImage {
+    border-radius: 50%;
+  }
+  
+  .memberName {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+  
+  .memberRole {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0.5em 0;
+  }
+  
+  .memberBio {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* Additional styles for About page */
+  .aboutContainer {
+    padding: 2em;
+    text-align: center;
+  }
+  .aboutContainer h1{
+    font-size: 2em;
+  }
+  
+  .profile {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .profileImage {
+    margin: 15px;
+    border-radius: 5%;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .profileImage:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .profileDetails {
+    width: 45%;
+    /* text-align: center; */
+  }
+  
+  .profileDetails h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    margin-top: 1.4em;
+  }
+  
+  .profileDetails h3 {
+    font-size: 1.5em;
+    color: #a9a9a9;
+    margin-bottom: 0.5em;
+  }
+  
+  .profileDetails p {
+    font-size: 1em;
+    color: var(--role-text);
+  }
+  .team-para{
+    margin-bottom: 15px;
+  }
+  .profileDetails .role{
+    font-size: 1.3em;
+    color: var(--role-text);
+    margin-bottom: 0.5em;
+  }

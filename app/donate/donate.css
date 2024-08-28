@@ -1,0 +1,184 @@
+/* General Styles */
+.donation-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: var(--overview-main-grid);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.donation-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--donate-text);
+}
+
+.donation-page p {
+  font-size: 1.2rem;
+  color: var(--donate-text);
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.donation-page form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.donation-page label {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--donate-text);
+  margin: 15px 0 5px;
+  text-align: left;
+}
+
+.donation-page input[type="number"],
+.donation-page select,
+.donation-page input[type="text"],
+.donation-page input[type="email"],
+.donation-page input[type="month"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.donation-page input[type="number"]:focus,
+.donation-page select:focus,
+.donation-page input[type="text"]:focus,
+.donation-page input[type="email"]:focus,
+.donation-page input[type="month"]:focus {
+  border-color: rgb(17, 82, 77);
+  outline: none;
+}
+
+.donation-page input[type="number"] {
+  appearance: none;
+}
+
+.donation-page input[type="number"]::-webkit-outer-spin-button,
+.donation-page input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Select Dropdown */
+.donation-page select {
+  appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0Ij48cGF0aCBmaWxsPSIjY2NjIiBkPSJNMTIuMDAxIDguNzgxYy0uMjU4LS4yNTgtLjY3Mi0uMjU4LS45MjktLjAwMWwtNC4zMjYgNC4zMjZhLjY1LjY1IDAgMCAwIDAgLjkzMWMuMjU4LjI1OC42NzIuMjU4LjkyOSAwTDExLjI1IDExLjYyYy4yNTgtLjI1OC4yNTgtLjY3MiAwLS45MjlsLTQuMzI1LTQuMzI2Yy0uMjU4LS4yNTgtLjY3Mi0uMjU4LS45MjkgMGwtNC4zMjYgNC4zMjZjLS4yNTguMjU4LS4yNTguNjcyIDAgLjkyOWEuNjUuNjUgMCAwIDAgLjkzMSAwbDQuMzI1LTQuMzI2Yy4yNTgtLjI1OC42NzItLjI1OC45MjktLjAwMS40NjYtLjQ2NiA0LjQ3NSA0LjQ3NEw4IDEyLjAwMkwyLjI0NyA3Ljg1NGEuNjUuNjUgMCAxIDAgLjkzMS0uOTMxbDQuMzI2IDQuMzI1Yy4yNTguMjU4LjY3Mi4yNTguOTI5IDBMMTIuMDAxIDguNzgxWiIgLz48L3N2Zz4=') no-repeat right 10px center;
+  background-size: 12px;
+  color: rgb(15, 118, 110);
+  cursor: pointer;
+}
+
+.donation-page select option {
+  padding: 10px;
+}
+
+/* Button Styles */
+.donation-page .donate-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: rgb(15, 118, 110);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.donation-page .donate-btn:hover {
+  background-color: rgb(17, 82, 77);
+}
+
+/* Thank You Message */
+.thank-you-message h1 {
+  font-size: 2rem;
+  color: #28a745;
+  /* margin-top: 30px; */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.back2home {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: rgb(17, 82, 77); /* Change this to your preferred color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* display: inline-block; Ensures proper alignment */
+  /* align-items: center; */
+}
+
+.back2home:hover {
+  background-color: rgb(17, 82, 77); /* Slightly darker shade on hover */
+}
+
+.back2home:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 94, 0.5);
+}
+
+
+.back2home svg {
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  height: 1.2em; /* Adjust height if needed */
+}
+
+.thank-you-message a {
+  text-decoration: none;
+}
+
+
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* QR Code Section */
+.qr-code-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Payment Details */
+.credit-card-details,
+.paypal-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.credit-card-details input,
+.paypal-details input {
+  width: 100%;
+}
